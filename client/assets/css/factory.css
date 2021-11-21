@@ -1,0 +1,35 @@
+.catBox {
+  background-color: #e2efff;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  padding: 25px;
+  background-color: #ededed;
+  border-radius: 10px;
+}
+
+.dnaDiv {
+  position: absolute;
+  left:10px;
+  top: 390px;
+}
+
+.buttons .btn{
+  margin: 5px;
+}
+
+.btn.create, .btn.random, .btn.default{
+  float: right;
+}
+
+.tab.colors{
+  display: block;
+}
+
+.tab.cattributes{
+  display: none;
+}

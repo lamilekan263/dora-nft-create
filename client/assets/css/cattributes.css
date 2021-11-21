@@ -1,0 +1,149 @@
+.cat__close_eyes{ 
+  width: 20px;
+  height: 20px;
+  border: solid 3px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 90% 90% 0 0;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.cat__close_eyes.left{
+  transform: rotate(0deg);
+}
+
+.cat__close_eyes.right{
+  transform: rotate(180deg);
+} 
+
+.cat__mouth_smile{
+  width: 140px;
+  height: 230px;
+  border: solid 1.5px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 80% 80% 20% 20%;
+  transform: rotate(180deg);
+  background-color: transparent;
+  position: absolute;
+}
+
+.cat__mouth_still{
+  width: 50px;
+  height: 10px;
+  border: solid 1.5px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 50% 50% 0% 0%;
+  transform: rotate(180deg);
+  background-color: transparent;
+  position: absolute;
+}
+
+.cat__mouth_thinking{
+  width: 80px;
+  height: 90px;
+  border: solid 1.5px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 80% 80% 20% 20%;
+  background-color: transparent;
+  position: absolute;
+}
+
+
+/* Animation */
+
+.movingBell {
+  animation: moveBell 2s infinite;
+}
+
+@keyframes moveBell {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+.movingArm.right{
+  animation: moveArmRight 2s infinite;
+}
+
+.movingArm.left{
+  animation: moveArmLeft 2s infinite;
+}
+
+@keyframes moveArmRight{
+  0% {
+    transform: rotate(178deg);
+  }
+  50% {
+    transform: rotate(190deg);
+  }
+  100% {
+    transform: rotate(178deg);
+  }
+}
+
+@keyframes moveArmLeft{
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+} 
+
+.movingFoot.right{
+  /* transform-origin: 25px 7px; */
+  animation: moveFootRight 2s infinite;
+}
+
+.movingFoot.left{
+  animation: moveFootLeft 2s infinite;
+}
+
+@keyframes moveFootRight{
+  0% {
+    transform: scale(-1,1) rotate(0deg);
+  }
+  50% {
+    transform: scale(-1,1) rotate(7deg);
+  }
+  100% {
+    transform: scale(-1,1) rotate(0deg);
+  }
+}
+
+@keyframes moveFootLeft{
+  0% {
+    transform: rotate(7deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(7deg);
+  }
+} 
+
+.jump {
+  animation: jumpCat 0.7s infinite;
+}
+
+@keyframes jumpCat {
+  0% {
+    top: 80px;
+  }
+  80% {
+    top: 50px;
+  }
+  100% {
+    top: 80px;
+  }
+}

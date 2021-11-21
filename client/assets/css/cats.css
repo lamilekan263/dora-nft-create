@@ -1,0 +1,517 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+#factoryBody {
+  background-color: #607d8b;
+}
+
+.cat{
+  transform: scale(1.5);
+  position: absolute;
+  top: 80px;
+}
+
+.cat *{
+  border: 1px solid black;
+}
+
+/**EARS****************************************/
+ .cat__ears{
+  position: relative;
+  border-style: none;
+  z-index: -1;
+} 
+
+.cat__ear {
+  background-color: #1DBEFE;
+  position: absolute;
+}
+
+.cat__ear.right {
+  border-radius: 20% 100% 0% 100%;
+  height: 90px;
+  width: 70px;
+  /* transform: scale(1,-1) rotate(200deg);  */
+  bottom: -80px;
+  left: 80px;
+}
+
+.cat__ear.left {
+  border-radius: 100% 20% 100% 0%;
+  height: 90px;
+  width: 70px;
+  /* transform: scale(1,-1) rotate(160deg);  */
+  bottom: -80px;
+} 
+
+.cat__ear_inside{
+  background-color: #FFFFFF;
+  height: 80px;
+  width: 60px;
+  position: absolute;
+}
+
+.cat__ear_inside.right{
+  border-radius: 20% 100% 0% 100%;
+  top: 5px;
+  left: 5px;
+}
+
+.cat__ear_inside.left{
+  border-radius: 100% 20% 100% 0%;
+  top: 5px;
+  left: 5px;
+}
+
+/**HEAD****************************************/
+.cat__head{
+  position: relative;
+  background-color: #1DBEFE;
+  width: 150px;
+  height: 150px;
+  border-radius: 60% 60% 55% 55%;
+  z-index: 0;
+}
+
+.cat__eyes{
+  position: absolute;
+  border-style: none;
+}
+
+.cat__eye{
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 40px;
+  border-radius: 60% 60% 60% 60%;
+  z-index: 1;
+  top: 10px;
+}
+
+.cat__eye.left{
+  transform: scale(1,-1) rotate(10deg);
+  left: 45px;
+}
+
+.cat__eye.right{
+  transform: rotate(10deg);
+  left: 75px;
+} 
+
+.cat__pupil{
+  background-color: #000000;
+  width: 8px;
+  height: 10px;
+  border-radius: 60%;
+  position: absolute;
+  border-style: none;
+} 
+
+.cat__pupil.left{
+  top: 10px;
+  left: 16px;
+  transform: rotate(-10deg);
+}
+
+.cat__pupil.right{
+  top: 19px;
+  left: 5px;
+  transform: rotate(-10deg);
+}
+
+.cat__inner_pupil{
+  background-color: white;
+  width: 3px;
+  height: 4px;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+}
+
+.cat__inner_pupil.left{
+  top: 3px;
+  left: 3px;
+  border-style: none;
+}
+
+.cat__inner_pupil.right{
+  top: 3px;
+  left: 2px;
+  border-style: none;
+}
+
+.cat__mouth_contour{
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 130px;
+  height: 130px;
+  border-radius: 60% 60% 55% 55%;
+  top: 25px;
+  left: 10px;
+}
+
+.cat__nose{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #D60035;
+  z-index: 2;
+  top: 43px;
+  left: 65px;
+}
+
+.cat__inner_nose{
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #FDFCFD;
+  z-index: 2;
+  top: 2px;
+  left: 2.5px;
+  border-style: none;
+}
+
+.cat__mouth{
+  position: absolute;
+  height: 45px;
+  width: 90px;
+  border-radius: 15px 15px 45px 45px;
+  background-color: #8A0004;
+  left: 30px;
+  top: 85px;
+}
+
+.cat__mouth_round{
+  position: absolute;
+  border-style: none;
+  width: 60px;
+  height: 30px;
+  border-radius: 0px 0px 25px 25px;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+
+.cat__mouth_round.left{
+  left: 15px;
+  top: 33px;
+}
+
+.cat__mouth_round.right{
+  transform: scale(1,-1) rotate(180deg);
+  left: 53px;
+  top: 33px;
+}
+
+.cat__tongue{
+  position: absolute;
+  height: 30px;
+  width: 65px;
+  border-radius: 10px 10px 35px 35px;
+  background-color: #FB0005;
+  left: 12px;
+  top: 13px;
+  border-style: none;
+}
+
+.cat__whiskers{
+  position: absolute;
+  border-style: none;
+  z-index: 4;
+}
+
+.cat__whisker{
+  width: 40px;
+  border: black;
+  border-width: 0.7px;
+  border-style: solid;
+  position: absolute;
+  top: 65px;
+}
+
+.cat__whisker.top.left{
+  transform-origin: 60px 0px;
+  transform: rotate(25deg); 
+}
+
+.cat__whisker.bottom.left{
+  transform-origin: 60px 0px;
+  transform: rotate(-15deg); 
+}
+
+.cat__whisker.top.right{
+  transform-origin: -20px 2px;
+  transform: rotate(15deg); 
+}
+
+.cat__whisker.bottom.right{
+  transform-origin: -20px 2px;
+  transform: rotate(-25deg); 
+}
+
+.cat__whisker.left{
+  left: 10px;
+}
+
+.cat__whisker.right{
+  left: 100px;
+}
+
+.cat__face_lines{
+  position: absolute;
+  border-style: none;
+}
+
+.cat__line_nose_to_mouth{
+  position: absolute;
+  border: black;
+  border-width: 0.7px;
+  background-color: #000;
+  border-style: solid;
+  height: 23px;
+  outline: none;
+  top: 63px;
+  left: 74px;
+  z-index: 2;
+}
+
+.cat__face_line{
+  position: absolute;
+  border-style: none;
+  width: 60px;
+  height: 160px;
+  border: solid 1.2px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 140% 80% 0 0;
+  z-index: 2;
+  top: -7px;
+}
+
+.cat__face_line.left{
+  position: absolute;
+  left: 70px;
+  transform: rotate(-90deg);
+}
+
+.cat__face_line.right{
+  position: absolute;
+  left: 20px;
+  transform: scale(1, -1) rotate(90deg);
+}
+
+/**DECORATION****************************************/
+
+.cat__decoration{
+  position: relative;
+  z-index: 10;
+  border-style: none;
+}
+
+.cat__ribbon{
+  position: absolute;
+  z-index: 10;
+  width: 92px;
+  height: 8px;
+  border-radius: 20% 20% 30% 30%;
+  background-color: #FB0006;
+  top: -14px;
+  left: 30px;
+}
+
+.cat__bell{
+  position: absolute;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFE737;
+  left: 65px;
+  top: -12px;
+}
+
+.cat__bell_dot{
+  position: absolute;
+  z-index: 11;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #9E2624;
+  left: 6.5px;
+  top: 8.5px;
+}
+
+.cat__bell_vertical_line{
+  position: absolute;
+  border: black;
+  border-width: 0.9px;
+  border-style: solid;
+  width: 6px;
+  outline: none;
+  transform: rotate(-90deg); 
+  top: 15px;
+  left: 6px;
+  z-index: 2;
+}
+
+.cat__bell__horizontal_line_top{
+  position: absolute;
+  border: black;
+  border-width: 0.8px;
+  border-style: solid;
+  width: 17px;
+  outline: none;
+  top: 4px;
+  left: 1px;
+  z-index: 2;
+}
+
+.cat__bell__horizontal_line_bottom{
+  position: absolute;
+  border: black;
+  border-width: 0.8px;
+  border-style: solid;
+  width: 19px;
+  outline: none;
+  top: 7px;
+  left: 0px;
+  z-index: 2;
+}
+
+.cat__pocket{
+  position: absolute;
+  z-index: 10;
+  width:50px;
+  height:25px;
+  border-radius:0 0 25px 25px;
+  background:#FFFFFF;
+  top: 20px;
+  left: 50px;
+}
+
+/**BODY****************************************/
+.cat__body{
+  position: relative;
+  border-style: none;
+}
+
+.cat__chest{
+  z-index: -1;
+  position: absolute;
+  width: 90px;
+  height: 100px;
+  background-color: #1DBEFE;
+  border-radius: 30% 30% 0% 0%;
+  top: -30px;
+  left: 29.5px;
+}
+
+.cat__inner_chest{
+  position: absolute;
+  width: 75px;
+  height: 65px;
+  background-color: #FFFFFF;
+  border-radius: 80% 80% 70% 70%;
+  top: -10px;
+  left: 37px;
+  z-index: 2;
+} 
+
+/**ARM****************************************/
+.cat__arms{
+  position: relative;
+  border-style: none;
+}
+
+.cat__arm{
+  position: absolute;
+  background-color: #1DBEFE;
+  z-index: 1;
+  height: 25px;
+}
+
+.cat__arm.left{
+  position: absolute;
+  width: 85px;
+  border-radius: 80% 80% 30% 60%;
+  transform-origin: 85px 12px;
+  transform: rotate(-30deg);
+  left: -31px;
+  top: -22px;
+}
+
+.cat__arm.right{
+  position: absolute;
+  width: 85px;
+  border-radius: 300% 80% 80% 60%;
+  transform-origin: 85px 12px;
+  transform: rotate(178deg);
+  left: 5px;
+  top: -10px;
+}
+
+.cat__hand{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.cat__hand.right{
+  position: absolute;
+  left: -5px;
+  top: 2px;
+}
+
+.cat__hand.left{
+  position: absolute;
+  left: -5px;
+  top: 1px;
+}
+
+/**FEET****************************************/
+
+.cat__feet{
+  position: relative;
+  border-style: none;
+}
+
+.cat__feet_seperator{
+  position: absolute;
+  background-color: #E2EFFF;
+  height: 13px;
+  width: 25px;
+  border-radius: 50% 50% 50% 50%;
+  top: 62px;
+  left: 62.5px;
+  border-style: none;
+  z-index: 3;
+}
+
+.cat__foot{
+  position: absolute;
+  background-color: #FFFFFF;
+  height: 16px;
+  width: 42px;
+  border-radius: 70% 50% 50% 50%;
+  z-index: 4;
+  top: 64px;
+}
+
+.cat__foot.left{
+  left: 22px;
+}
+
+.cat__foot.right{
+  transform: scale(-1,1);
+  left: 86px;
+}

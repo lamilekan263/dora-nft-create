@@ -1,0 +1,269 @@
+.menu-title {
+  margin-top: 3vh;
+  color: #ffffff;
+}
+
+.frontend {
+  height: 90vh;
+  padding-top: 105px;
+  background: url('../images/banner.png') no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.header {
+  height: 30vh;
+  padding-top: 105px;
+  margin-top: 15px;
+  background: url('../images/banner.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.nav-link {
+  padding: 17px 55px;
+  margin-right: 25px;
+}
+
+.nav-link b {
+  color: #000000;
+  transition: 0.3s ease-in;
+}
+
+.nav-link b:hover {
+  color: #ed5b0d;
+}
+
+.catGroup {
+  margin-top: 120px;
+  width: 50%;
+}
+
+#canvas {
+  position: absolute;
+}
+
+.banner {
+  background-color: rgba(161, 36, 7, 0.8);
+  margin-top: -30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  width: 82%;
+  text-align: center;
+  position: relative;
+}
+
+.middleBox {
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+
+footer {
+  position: static;
+  margin-top: 100px;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  padding: 4vh;
+  background: #f8f8f8;
+}
+
+.flipcard{
+  background-color: transparent;
+  height: 400px;
+  margin-top: 50px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.featureBox {
+  border: 1px solid #009DE4;
+  border-radius: 10px;
+  background-color: #e2efff;
+  transition: 0.8s ease-in-out;
+  box-shadow: 0px 1px 7px -2px #444444;
+  position: relative;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.cat *{
+  pointer-events: none;
+}
+
+.flipcard:hover .featureBox {
+  transform: rotateY(180deg);
+}
+
+.flipcard_front, .flipcard_back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flipcard_back{
+  transform: rotateY(180deg);
+}
+
+.featureBox h4 {
+  font-weight: 600;
+}
+
+.catDiv {
+  /* width: fit-content; */
+}
+
+.egg {
+  width: 150px;
+  height: 150px;
+  background: url('../images/egg.png') no-repeat;
+  background-size: contain;
+}
+
+/* BUTTONS */
+
+.red-btn {
+  background-color: #FFE737;
+  color: #9E2624;
+  font-family: sans-serif;
+  border-radius: 5%;
+  padding: 13px 40px;
+  margin-top: 2px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+}
+.buttons.menu .btn{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  padding: 10px 30px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+.buttons.menu .btn.breed {
+  float: left;
+}
+
+.red-btn:hover {
+  color: #9E2624;
+}
+
+.white-btn {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 17px 3vw;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.breed-menu, .sell-menu {
+  display: none;
+}
+
+.breed-menu > h3, .sell-menu > h3 {
+  text-align: center;
+}
+
+.breed-menu > .buttons, .sell-menu > .buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -23px;
+}
+
+.breed-menu .btn, .sell-menu .btn {
+  margin: 5px 10px;
+}
+
+.sell-menu .form-group {
+  width: 170px;
+}
+
+.sell-menu .form-control {
+  width: 90%;
+  margin: 5px 10px;
+}
+
+.offerBox {
+  position: absolute;
+  top: 410px;
+  left: 30px;
+  height: 50px;
+  width: 85%;
+  background-color: transparent;
+}
+
+.offerBox .tag {
+  float: left;
+  margin-top: 7px;
+}
+
+.offerBox .tag h5 {
+  font-family: Arial;
+  font-weight: 500;
+  font-size: 16pt;
+}
+
+.offerBox .buttons {
+  float: right;
+}
+
+.offerBox .buttons .btn {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.homepage-pic {
+  margin-top: 40px;
+}
+
+.homepage-pic > img {
+  width: 100%;
+}
+
+#homebody{
+  background-color: #E2EFFF;
+}
+
+#homebody .white-bg {
+  margin-top: 30px;
+  background-color: #fff;
+  width: 100%;
+  height: 300px;
+}
+
+#homebody footer {
+  margin-top: 0px;
+}
+
+.white-bg h1 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.features-list {
+  font-family: Arial;
+  display: table;
+  margin: 0 auto;
+}
+
+.features-list li {
+  font-size: xx-large;
+}
+
+.features-list li:first-child {
+  margin-top: 15px;
+}
